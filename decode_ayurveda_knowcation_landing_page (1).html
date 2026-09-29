@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>D.E.C.O.D.E. — The Ayurveda Experiential Knowcation | Igatpuri 2026</title>
+<meta content="An immersive Ayurveda learning Knowcation in Igatpuri, Nashik for BAMS students, PG scholars, and budding Vaidyas. Experience classical Ayurveda beyond the syllabus." name="description"/>
+<!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Forms & Container Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration for Luxury Ayurvedic Palette -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ayur: {
+              forest: '#11251C',
+              dark: '#1B382B',
+              leaf: '#264E3A',
+              sage: '#4A6B53',
+              softsage: '#E7EDE6',
+              gold: '#C5A059',
+              goldlight: '#E5C887',
+              golddark: '#99783D',
+              cream: '#FBF9F4',
+              ivory: '#F4EFE6',
+              charcoal: '#222522',
+              cardbg: '#FFFFFF',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 25px -5px rgba(197, 160, 89, 0.3)',
+            'card-soft': '0 10px 30px -10px rgba(17, 37, 28, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Botanical Details and Refined Aesthetics -->
+<style data-purpose="custom-typography">
+    .font-serif-luxury {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      letter-spacing: -0.01em;
+    }
+    .tracking-luxury {
+      letter-spacing: 0.18em;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #E5C887 0%, #C5A059 50%, #99783D 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border-gradient {
+      border-image: linear-gradient(to right, rgba(197, 160, 89, 0.1), rgba(197, 160, 89, 0.8), rgba(197, 160, 89, 0.1)) 1;
+    }
+  </style>
+<style data-purpose="ui-decorations">
+    /* Subtle botanical accent ornament */
+    .ornament-leaf::before, .ornament-leaf::after {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      background: #C5A059;
+      vertical-align: middle;
+      opacity: 0.6;
+      margin: 0 14px;
+    }
+    /* Smooth modal transition styles */
+    .modal-backdrop {
+      backdrop-filter: blur(8px);
+    }
+    /* Glass card effect */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+    }
+    .glass-dark-card {
+      background: rgba(17, 37, 28, 0.75);
+      backdrop-filter: blur(14px);
+    }
+  </style>
+</head>
+<body class="bg-ayur-cream text-ayur-charcoal font-sans antialiased selection:bg-ayur-gold selection:text-white">
+<!-- BEGIN: Sticky Top Navigation -->
+<header class="sticky top-0 z-40 bg-ayur-forest/95 backdrop-blur-md border-b border-ayur-gold/20 transition-all duration-300 shadow-sm" data-purpose="main-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Logo and Brand Name -->
+<a aria-label="DECODE Ayurveda Home" class="flex items-center gap-3.5 group" href="#">
+<img alt="DECODE Ayurveda Knowcation Emblem" class="h-12 w-12 rounded-full border border-ayur-gold/60 object-contain p-0.5 bg-ayur-ivory group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-6DT-1lD-ETR6jD-EGD7HGgI6yJ5oEl-_Ot7mOql6paUIMSmEvQbg8_OBaAMyc9dVtwPyl7La5zuhzR-OU-WcNCp58_9nWQS5ZiAMxoy-wTEaHODokabJ_8WXkkh-PZHfbzSKDgs9bn6pyhlc6IWNLNFwDM4KxxiWDZGUYzqGgWY5hlh6otDScvt6SzMvYLgvyXA2qHu_iwoYS3UshYV7li6_gqNrtCT4mon4arSWc7uFKiksWYsn3fG5UTtK6hSAaw"/>
+<div class="flex flex-col">
+<span class="font-serif font-bold text-xl tracking-[0.2em] text-ayur-goldlight group-hover:text-white transition-colors">D.E.C.O.D.E.</span>
+<span class="text-[10px] tracking-wider text-ayur-softsage uppercase font-light -mt-0.5">Ayurveda Knowcation</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav aria-label="Desktop Navigation" class="hidden lg:flex items-center space-x-7">
+<a class="text-xs uppercase tracking-widest text-ayur-ivory/80 hover:text-ayur-gold transition-colors" href="#about">About</a>
+<a class="text-xs uppercase tracking-widest text-ayur-ivory/80 hover:text-ayur-gold transition-colors" href="#experience">Experience</a>
+<a class="text-xs uppercase tracking-widest text-ayur-ivory/80 hover:text-ayur-gold transition-colors" href="#what-you-decode">What You'll Decode</a>
+<a class="text-xs uppercase tracking-widest text-ayur-ivory/80 hover:text-ayur-gold transition-colors" href="#journey">3-Day Journey</a>
+<a class="text-xs uppercase tracking-widest text-ayur-ivory/80 hover:text-ayur-gold transition-colors" href="#inclusions">What's Included</a>
+<a class="text-xs uppercase tracking-widest text-ayur-ivory/80 hover:text-ayur-gold transition-colors" href="#circle">The Circle</a>
+</nav>
+<!-- Right Action Button & Mobile Menu Toggle -->
+<div class="flex items-center gap-4">
+<button class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-widest text-ayur-forest bg-gradient-to-r from-ayur-goldlight via-ayur-gold to-ayur-golddark hover:shadow-gold-glow hover:scale-[1.02] active:scale-[0.98] transition-all duration-300" onclick="window.DECODE_MODAL.openModal()" type="button">
+            Join DECODE
+          </button>
+<!-- Hamburger Button for Mobile -->
+<button aria-label="Toggle Navigation Menu" class="lg:hidden p-2 text-ayur-cream hover:text-ayur-gold focus:outline-none" id="mobileMenuBtn" onclick="toggleMobileMenu()" type="button">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+<!-- Mobile Navigation Dropdown -->
+<div class="hidden lg:hidden bg-ayur-forest border-b border-ayur-gold/20 px-4 pt-3 pb-6 space-y-3" id="mobileMenu">
+<a class="block py-2 text-xs uppercase tracking-wider text-ayur-cream hover:text-ayur-gold" href="#about" onclick="toggleMobileMenu()">About</a>
+<a class="block py-2 text-xs uppercase tracking-wider text-ayur-cream hover:text-ayur-gold" href="#experience" onclick="toggleMobileMenu()">The Experience</a>
+<a class="block py-2 text-xs uppercase tracking-wider text-ayur-cream hover:text-ayur-gold" href="#what-you-decode" onclick="toggleMobileMenu()">What You'll Decode</a>
+<a class="block py-2 text-xs uppercase tracking-wider text-ayur-cream hover:text-ayur-gold" href="#journey" onclick="toggleMobileMenu()">3-Day Journey</a>
+<a class="block py-2 text-xs uppercase tracking-wider text-ayur-cream hover:text-ayur-gold" href="#inclusions" onclick="toggleMobileMenu()">What's Included</a>
+<a class="block py-2 text-xs uppercase tracking-wider text-ayur-cream hover:text-ayur-gold" href="#circle" onclick="toggleMobileMenu()">The DECODE Circle</a>
+<button class="w-full mt-3 py-3 rounded-full text-xs font-semibold uppercase tracking-widest text-ayur-forest bg-ayur-gold hover:bg-ayur-goldlight text-center transition-colors" onclick="toggleMobileMenu(); window.DECODE_MODAL.openModal()" type="button">
+        Join DECODE
+      </button>
+</div>
+</header>
+<!-- END: Sticky Top Navigation -->
+<main>
+<!-- BEGIN: Hero Section -->
+<section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-ayur-forest" data-purpose="hero-section">
+<!-- Immersive Retreat Photography as Background -->
+<div class="absolute inset-0 z-0">
+<img alt="Serene lush misty morning hills in Igatpuri Western Ghats India with lush green Ayurvedic herbs, gentle golden sun rays filtering through foliage, luxury wellness eco retreat atmosphere, warm golden hour light, tranquil nature landscape photography" class="w-full h-full object-cover object-center scale-105 animate-[pulse_10s_ease-in-out_infinite]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg8jAZHpkBPP3T0gpDKGew9g6uyC--twwVYQEEZXRbpfsEAYSh5Gffm9ZBvNInHNT8afWreZMEfNgW1Y5sx4nbDb8gOwXJhwWq7PpjOB1p2sA6Gv9-j7mgaoCH_Ra1UtJadMljSBrrSwwEhHkETnpvkVAsztzZOZOiWdocsQtFdCeIh_ER5fyrwRbAbVs161RXlv4z8HdpjY0UBWf_GIEZvJQBIEMKa4VBvVkNItyj3fS7eQLGHJNL"/>
+<!-- Gradient Overlay for High Contrast and Atmospheric Luxury -->
+<div class="absolute inset-0 bg-gradient-to-t from-ayur-forest via-ayur-forest/80 to-ayur-forest/50"></div>
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-ayur-dark/60 to-ayur-forest"></div>
+</div>
+<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center">
+<!-- Brand Logo Badge -->
+<div class="mb-6 relative">
+<div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-b from-ayur-goldlight via-ayur-gold to-ayur-forest shadow-2xl">
+<img alt="D.E.C.O.D.E. from learning Roots via Routes Logo" class="w-full h-full object-contain rounded-full bg-ayur-ivory p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi0_FNFHcPbcHdmY4JN9Jx3ayL0AWuxNA5XaP1so283VzRe6is3Aivde-eGOKzHCq5HxO3Up1UpdxztZ5vPyZ-xR5eyHrpS-rM3CPPBUhezmdTm-lKmaZSuxGMp39k9XNNN_pkxYBkHQIpVXhvpKgnBIn2ttxSdD3-B_cFLRIcOcJcSwi2U4GQYPKZkuSeE2XHlqFkabDx3IWn1BzfXtcTT98nXROFHExPASLsza_Fk8jVItFjREkd5tKsvUuBHLKO3g"/>
+</div>
+<div class="absolute -bottom-2 inset-x-0 flex justify-center">
+<span class="bg-ayur-forest border border-ayur-gold/40 text-ayur-goldlight text-[10px] uppercase font-bold tracking-widest px-3 py-0.5 rounded-full shadow-sm">
+              Roots via Routes
+            </span>
+</div>
+</div>
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-ayur-leaf/70 border border-ayur-gold/30 text-ayur-goldlight text-xs font-medium tracking-widest uppercase mb-6 backdrop-blur-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-ayur-gold animate-ping"></span>
+          Exclusively for Ayurveda Learners
+        </div>
+<!-- Main Headline -->
+<h1 class="font-serif font-normal text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[1.15] mb-6 max-w-4xl">
+          The Ayurveda you studied. <br class="hidden sm:inline"/>
+<span class="italic font-serif font-light text-ayur-goldlight">The Ayurveda you were meant to experience.</span>
+</h1>
+<!-- Subtitle -->
+<p class="text-sm sm:text-base md:text-lg text-ayur-softsage font-light tracking-wide max-w-2xl mb-8">
+          Learn <span class="text-ayur-gold font-bold">•</span> Unlearn <span class="text-ayur-gold font-bold">•</span> Experience <span class="text-ayur-gold font-bold">•</span> Question <span class="text-ayur-gold font-bold">•</span> Connect
+        </p>
+<!-- Meta Details Chips -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 w-full max-w-3xl mb-10 text-ayur-ivory">
+<div class="bg-black/35 backdrop-blur-md border border-ayur-gold/25 rounded-xl py-3 px-2 text-center">
+<span class="block text-[11px] text-ayur-gold uppercase tracking-wider font-semibold">Dates</span>
+<span class="text-xs sm:text-sm font-medium">23–25 October 2026</span>
+</div>
+<div class="bg-black/35 backdrop-blur-md border border-ayur-gold/25 rounded-xl py-3 px-2 text-center">
+<span class="block text-[11px] text-ayur-gold uppercase tracking-wider font-semibold">Location</span>
+<span class="text-xs sm:text-sm font-medium">Igatpuri, Nashik</span>
+</div>
+<div class="bg-black/35 backdrop-blur-md border border-ayur-gold/25 rounded-xl py-3 px-2 text-center">
+<span class="block text-[11px] text-ayur-gold uppercase tracking-wider font-semibold">Duration</span>
+<span class="text-xs sm:text-sm font-medium">3 Days | 2 Nights</span>
+</div>
+<div class="bg-black/35 backdrop-blur-md border border-ayur-gold/25 rounded-xl py-3 px-2 text-center">
+<span class="block text-[11px] text-ayur-gold uppercase tracking-wider font-semibold">Cohort</span>
+<span class="text-xs sm:text-sm font-medium">BAMS, PGs &amp; Vaidyas</span>
+</div>
+</div>
+<!-- Hero Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+<button class="w-full sm:w-auto px-8 py-4 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-widest text-ayur-forest bg-gradient-to-r from-ayur-goldlight via-ayur-gold to-ayur-golddark hover:shadow-gold-glow hover:scale-105 active:scale-95 transition-all duration-300" onclick="window.DECODE_MODAL.openModal()" type="button">
+            Join DECODE
+          </button>
+<a class="w-full sm:w-auto px-7 py-4 rounded-full text-xs sm:text-sm font-medium uppercase tracking-widest text-ayur-cream bg-white/5 hover:bg-white/10 border border-ayur-cream/30 hover:border-ayur-gold transition-all duration-300 text-center" href="#experience">
+            Explore The Experience
+          </a>
+</div>
+</div>
+<!-- Subtle Bottom Golden Border -->
+<div class="absolute bottom-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-ayur-gold/40 to-transparent"></div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Why DECODE Section -->
+<section class="py-24 bg-ayur-cream relative" data-purpose="why-decode-section" id="about">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<!-- Eyebrow -->
+<p class="text-xs uppercase tracking-[0.25em] text-ayur-golddark font-semibold mb-3">The Genesis</p>
+<h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-ayur-dark leading-snug mb-8">
+          Because Ayurveda was never meant to be <br class="hidden sm:inline"/>
+<span class="italic text-ayur-sage">just memorised.</span>
+</h2>
+<!-- Filigree divider -->
+<div class="flex items-center justify-center gap-4 mb-10 text-ayur-gold">
+<span class="h-px w-16 bg-ayur-gold/40"></span>
+<svg class="w-5 h-5 text-ayur-gold" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"></path>
+</svg>
+<span class="h-px w-16 bg-ayur-gold/40"></span>
+</div>
+<div class="space-y-6 text-base sm:text-lg text-ayur-charcoal/85 leading-relaxed font-light text-left sm:text-center">
+<p>
+            Somewhere between endless lecture halls, thousands of shlokas, hurried dissection practicals, and stressful semester examinations, many students found themselves studying Ayurveda for the <span class="font-semibold text-ayur-dark">next exam</span>—instead of the <span class="font-semibold text-ayur-dark">next patient</span>.
+          </p>
+<p>
+            The profound healing philosophy that once blossomed under banyan trees and herbal gardens became confined to photocopied notes, clinical vivas, and multiple-choice questions. We memorised the lakshanas, but rarely witnessed them breathe.
+          </p>
+<div class="p-8 my-8 rounded-2xl bg-ayur-ivory border border-ayur-gold/30 shadow-sm relative">
+<span class="text-5xl font-serif text-ayur-gold/30 absolute top-2 left-4">“</span>
+<p class="font-serif text-xl sm:text-2xl text-ayur-dark italic relative z-10">
+              DECODE creates an unhurried, consecrated sanctuary to rediscover and experience Ayurveda deeply—before you step out into the world as Vaidyas.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Why DECODE Section -->
+<!-- BEGIN: More Than A Syllabus Section -->
+<section class="py-20 bg-ayur-ivory border-y border-ayur-gold/20" data-purpose="more-than-syllabus">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<p class="text-xs uppercase tracking-[0.25em] text-ayur-golddark font-semibold mb-2">Transforming Perspective</p>
+<h2 class="font-serif text-3xl sm:text-4xl text-ayur-dark">More Than a Syllabus</h2>
+<p class="mt-3 text-sm text-ayur-charcoal/70">Bridging the vital chasm between academic theory and instinctual clinical wisdom.</p>
+</div>
+<!-- 3 Flow Bridges -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Bridge 1 -->
+<div class="bg-white rounded-2xl p-8 border border-ayur-gold/30 shadow-card-soft text-center group hover:border-ayur-gold transition-all duration-300">
+<div class="w-14 h-14 mx-auto rounded-full bg-ayur-softsage/60 text-ayur-dark flex items-center justify-center font-serif text-2xl font-bold mb-6 group-hover:bg-ayur-gold group-hover:text-white transition-colors">
+              I
+            </div>
+<div class="text-xs font-semibold uppercase tracking-wider text-ayur-golddark mb-1">From Text to Instinct</div>
+<h3 class="font-serif text-xl text-ayur-dark font-medium mb-3">Samhitas → Clinical Thinking</h3>
+<p class="text-sm text-ayur-charcoal/75 leading-relaxed font-light">
+              Moving past rote recitation of verses to understanding the clinical mindset of Charaka and Sushruta in diagnosing real modern disease pathologies.
+            </p>
+</div>
+<!-- Bridge 2 -->
+<div class="bg-white rounded-2xl p-8 border border-ayur-gold/30 shadow-card-soft text-center group hover:border-ayur-gold transition-all duration-300">
+<div class="w-14 h-14 mx-auto rounded-full bg-ayur-softsage/60 text-ayur-dark flex items-center justify-center font-serif text-2xl font-bold mb-6 group-hover:bg-ayur-gold group-hover:text-white transition-colors">
+              II
+            </div>
+<div class="text-xs font-semibold uppercase tracking-wider text-ayur-golddark mb-1">From Abstract to Tangible</div>
+<h3 class="font-serif text-xl text-ayur-dark font-medium mb-3">Concepts → Observation</h3>
+<p class="text-sm text-ayur-charcoal/75 leading-relaxed font-light">
+              Seeing Gunas, Doshas, and Dhatus not as diagrams on a blackboard, but as active biological expressions in the soil, the plants, and human physiology.
+            </p>
+</div>
+<!-- Bridge 3 -->
+<div class="bg-white rounded-2xl p-8 border border-ayur-gold/30 shadow-card-soft text-center group hover:border-ayur-gold transition-all duration-300">
+<div class="w-14 h-14 mx-auto rounded-full bg-ayur-softsage/60 text-ayur-dark flex items-center justify-center font-serif text-2xl font-bold mb-6 group-hover:bg-ayur-gold group-hover:text-white transition-colors">
+              III
+            </div>
+<div class="text-xs font-semibold uppercase tracking-wider text-ayur-golddark mb-1">From Memorisation to Action</div>
+<h3 class="font-serif text-xl text-ayur-dark font-medium mb-3">Theory → Practical Application</h3>
+<p class="text-sm text-ayur-charcoal/75 leading-relaxed font-light">
+              Asking genuine clinical questions, unravelling Chikitsa sutras, and building therapeutic conviction beyond PowerPoint slides and viva answers.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: More Than A Syllabus Section -->
+<!-- BEGIN: What is a Knowcation Section -->
+<section class="py-24 bg-ayur-forest text-white relative overflow-hidden" data-purpose="what-is-knowcation" id="experience">
+<!-- Decorative background blur circles -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-ayur-sage/20 blur-3xl"></div>
+<div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-ayur-gold/10 blur-3xl"></div>
+<div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="inline-block text-xs uppercase tracking-[0.25em] text-ayur-goldlight font-semibold mb-2">The Format</span>
+<h2 class="font-serif text-3xl sm:text-5xl font-light tracking-tight mb-4">
+            Knowledge <span class="text-ayur-gold">+</span> Vacation <span class="text-ayur-gold">=</span> Knowcation
+          </h2>
+<p class="text-sm sm:text-base text-ayur-softsage font-light max-w-xl mx-auto">
+            Not a sterile hotel seminar. Not an exhaustive cramming camp. An immersive retreat nestled within the misty Western Ghats of Igatpuri.
+          </p>
+</div>
+<!-- 6 Pillars Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="glass-dark-card p-7 rounded-2xl border border-ayur-gold/20 hover:border-ayur-gold/60 transition-all duration-300">
+<div class="w-10 h-10 rounded-lg bg-ayur-gold/20 flex items-center justify-center text-ayur-goldlight mb-4">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h4 class="font-serif text-lg font-medium text-white mb-2">Nature &amp; Western Ghats Mist</h4>
+<p class="text-xs sm:text-sm text-ayur-softsage/80 leading-relaxed font-light">
+              Waking up in Igatpuri surrounded by clean mountain air, birdsong, and dew-drenched medicinal flora.
+            </p>
+</div>
+<div class="glass-dark-card p-7 rounded-2xl border border-ayur-gold/20 hover:border-ayur-gold/60 transition-all duration-300">
+<div class="w-10 h-10 rounded-lg bg-ayur-gold/20 flex items-center justify-center text-ayur-goldlight mb-4">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h4 class="font-serif text-lg font-medium text-white mb-2">Ayurveda Over Warm Herbal Chai</h4>
+<p class="text-xs sm:text-sm text-ayur-softsage/80 leading-relaxed font-light">
+              Casual yet profound discussions with mentors and peers over seasonal Kwaths and nourishing infusions.
+            </p>
+</div>
+<div class="glass-dark-card p-7 rounded-2xl border border-ayur-gold/20 hover:border-ayur-gold/60 transition-all duration-300">
+<div class="w-10 h-10 rounded-lg bg-ayur-gold/20 flex items-center justify-center text-ayur-goldlight mb-4">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h4 class="font-serif text-lg font-medium text-white mb-2">Observing Classical Concepts Live</h4>
+<p class="text-xs sm:text-sm text-ayur-softsage/80 leading-relaxed font-light">
+              Witnessing how Agni shifts with the sun, how Doshas oscillate across diurnal rhythms, and assessing real pulses.
+            </p>
+</div>
+<div class="glass-dark-card p-7 rounded-2xl border border-ayur-gold/20 hover:border-ayur-gold/60 transition-all duration-300">
+<div class="w-10 h-10 rounded-lg bg-ayur-gold/20 flex items-center justify-center text-ayur-goldlight mb-4">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h4 class="font-serif text-lg font-medium text-white mb-2">Questioning with Deep Curiosity</h4>
+<p class="text-xs sm:text-sm text-ayur-softsage/80 leading-relaxed font-light">
+              No judgment, no academic hierarchy. Space to ask the foundational 'Whys' that traditional lecture halls often bypass.
+            </p>
+</div>
+<div class="glass-dark-card p-7 rounded-2xl border border-ayur-gold/20 hover:border-ayur-gold/60 transition-all duration-300">
+<div class="w-10 h-10 rounded-lg bg-ayur-gold/20 flex items-center justify-center text-ayur-goldlight mb-4">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h4 class="font-serif text-lg font-medium text-white mb-2">Experiences Over Rote Cramming</h4>
+<p class="text-xs sm:text-sm text-ayur-softsage/80 leading-relaxed font-light">
+              Sensory understanding of Rasa, Guna, Virya, and Vipaka through taste, smell, touch, and clinical simulation.
+            </p>
+</div>
+<div class="glass-dark-card p-7 rounded-2xl border border-ayur-gold/20 hover:border-ayur-gold/60 transition-all duration-300">
+<div class="w-10 h-10 rounded-lg bg-ayur-gold/20 flex items-center justify-center text-ayur-goldlight mb-4">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<h4 class="font-serif text-lg font-medium text-white mb-2">Conversations Past Sunset</h4>
+<p class="text-xs sm:text-sm text-ayur-softsage/80 leading-relaxed font-light">
+              Campfire circles and starlit gatherings where lifelong bonds and clinical collaborative alliances are formed.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: What is a Knowcation Section -->
+<!-- BEGIN: What Will You Decode Section -->
+<section class="py-24 bg-ayur-cream relative" data-purpose="what-you-decode-section" id="what-you-decode">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<p class="text-xs uppercase tracking-[0.25em] text-ayur-golddark font-semibold mb-2">Curriculum of Depth</p>
+<h2 class="font-serif text-3xl sm:text-5xl text-ayur-dark font-normal">What Will You Decode?</h2>
+<div class="w-16 h-0.5 bg-ayur-gold mx-auto mt-4 mb-4"></div>
+<p class="text-sm sm:text-base text-ayur-charcoal/75 font-light">
+            Six foundational learning pillars crafted with gold standard Ayurvedic rigor.
+          </p>
+</div>
+<!-- 6 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white rounded-2xl p-8 border border-ayur-gold/30 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-mono font-bold text-ayur-gold uppercase tracking-wider">PILLAR 01</span>
+<span class="text-lg">📜</span>
+</div>
+<h3 class="font-serif text-2xl text-ayur-dark font-medium mb-3">Beyond the Verses</h3>
+<p class="text-sm text-ayur-charcoal/80 leading-relaxed font-light">
+                Go beyond memorising Samhitas. Understand how classical shlokas actually translate into live clinical diagnostic thinking and patient management today.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-ayur-softsage text-xs text-ayur-sage font-medium">
+              Sutras in action • Not merely for exams
+            </div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-2xl p-8 border border-ayur-gold/30 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-mono font-bold text-ayur-gold uppercase tracking-wider">PILLAR 02</span>
+<span class="text-lg">🧠</span>
+</div>
+<h3 class="font-serif text-2xl text-ayur-dark font-medium mb-3">Think Like a Vaidya</h3>
+<p class="text-sm text-ayur-charcoal/80 leading-relaxed font-light mb-4">
+                Learn how to formulate clinical rationale rather than simply matching diseases with pre-fixed proprietary drugs.
+              </p>
+<div class="bg-ayur-ivory/80 rounded-xl p-3 text-[11px] text-ayur-dark font-mono flex items-center justify-between border border-ayur-gold/20">
+<span>Hetu</span>
+<span class="text-ayur-gold">→</span>
+<span>Lakshana</span>
+<span class="text-ayur-gold">→</span>
+<span>Samprapti</span>
+<span class="text-ayur-gold">→</span>
+<span>Chikitsa</span>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-ayur-softsage text-xs text-ayur-sage font-medium">
+              Diagnostic chains • Pathological synthesis
+            </div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-2xl p-8 border border-ayur-gold/30 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-mono font-bold text-ayur-gold uppercase tracking-wider">PILLAR 03</span>
+<span class="text-lg">🌿</span>
+</div>
+<h3 class="font-serif text-2xl text-ayur-dark font-medium mb-3">The Root Code</h3>
+<p class="text-sm text-ayur-charcoal/80 leading-relaxed font-light">
+                Decode the eternal core building blocks of classical healing: Agni, Dosha, Dhatu, Mala, Srotas, Prakriti, and Manas as dynamic, interconnected realities.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-ayur-softsage text-xs text-ayur-sage font-medium">
+              Fundamental mechanics of human biology
+            </div>
+</div>
+<!-- Card 4 -->
+<div class="bg-white rounded-2xl p-8 border border-ayur-gold/30 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-mono font-bold text-ayur-gold uppercase tracking-wider">PILLAR 04</span>
+<span class="text-lg">👁️</span>
+</div>
+<h3 class="font-serif text-2xl text-ayur-dark font-medium mb-3">The Vaidya's Eye</h3>
+<p class="text-sm text-ayur-charcoal/80 leading-relaxed font-light">
+                Master the art of classical Pariksha:
+              </p>
+<ul class="mt-2 space-y-1 text-xs text-ayur-charcoal/80 font-light list-disc list-inside">
+<li><strong class="font-semibold text-ayur-dark">Darshana:</strong> Visual observation of subtle markers</li>
+<li><strong class="font-semibold text-ayur-dark">Sparshana:</strong> Palpation, touch &amp; Naadi examination</li>
+<li><strong class="font-semibold text-ayur-dark">Prashna:</strong> Clinical inquiry that uncovers hidden Hetu</li>
+</ul>
+</div>
+<div class="mt-6 pt-4 border-t border-ayur-softsage text-xs text-ayur-sage font-medium">
+              Trividha Pariksha in live clinical encounters
+            </div>
+</div>
+<!-- Card 5 -->
+<div class="bg-white rounded-2xl p-8 border border-ayur-gold/30 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-mono font-bold text-ayur-gold uppercase tracking-wider">PILLAR 05</span>
+<span class="text-lg">❓</span>
+</div>
+<h3 class="font-serif text-2xl text-ayur-dark font-medium mb-3">Why Behind the What</h3>
+<p class="text-sm text-ayur-charcoal/80 leading-relaxed font-light">
+                Shift your mindset from memorising "what medicine to give" to discovering "why the pathology occurred in the first place." Build conviction rooted in logic (Yukti).
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-ayur-softsage text-xs text-ayur-sage font-medium">
+              Yukti Pramana &amp; critical reasoning
+            </div>
+</div>
+<!-- Card 6 -->
+<div class="bg-white rounded-2xl p-8 border border-ayur-gold/30 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-mono font-bold text-ayur-gold uppercase tracking-wider">PILLAR 06</span>
+<span class="text-lg">☀️</span>
+</div>
+<h3 class="font-serif text-2xl text-ayur-dark font-medium mb-3">Feel It, Live It</h3>
+<p class="text-sm text-ayur-charcoal/80 leading-relaxed font-light">
+                Ayurveda is not merely a medical science; it is lived experiential awareness. Live through Ahara, Vihara, Dinacharya, Manas, Nature immersion, and authentic rituals.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-ayur-softsage text-xs text-ayur-sage font-medium">
+              Transforming self before treating others
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: What Will You Decode Section -->
+<!-- BEGIN: What Makes DECODE Different Section (6-Step Path) -->
+<section class="py-24 bg-ayur-ivory border-t border-ayur-gold/20" data-purpose="different-roadmap">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<p class="text-xs uppercase tracking-[0.25em] text-ayur-golddark font-semibold mb-2">The DECODE Methodology</p>
+<h2 class="font-serif text-3xl sm:text-4xl text-ayur-dark">The 6-Step Journey Path</h2>
+<p class="mt-2 text-sm text-ayur-charcoal/70">From discovering classical origins to evolving into an instinctual physician.</p>
+</div>
+<!-- Stepper Visual -->
+<div class="relative">
+<!-- Connecting Line for Desktop -->
+<div class="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-ayur-gold/20 via-ayur-gold to-ayur-gold/20 -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 relative z-10">
+<!-- Step 1 -->
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 text-center shadow-sm hover:border-ayur-gold transition-all duration-300">
+<span class="w-8 h-8 rounded-full bg-ayur-dark text-ayur-goldlight text-xs font-bold inline-flex items-center justify-center mb-3">01</span>
+<h4 class="font-serif font-bold text-lg text-ayur-dark tracking-wide">DISCOVER</h4>
+<p class="text-xs text-ayur-charcoal/70 mt-2 font-light">Uncovering original classical intent behind ancient sutras.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 text-center shadow-sm hover:border-ayur-gold transition-all duration-300">
+<span class="w-8 h-8 rounded-full bg-ayur-dark text-ayur-goldlight text-xs font-bold inline-flex items-center justify-center mb-3">02</span>
+<h4 class="font-serif font-bold text-lg text-ayur-dark tracking-wide">EXPERIENCE</h4>
+<p class="text-xs text-ayur-charcoal/70 mt-2 font-light">Sensory engagement with dravyaguna, taste, diet &amp; lifestyle.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 text-center shadow-sm hover:border-ayur-gold transition-all duration-300">
+<span class="w-8 h-8 rounded-full bg-ayur-dark text-ayur-goldlight text-xs font-bold inline-flex items-center justify-center mb-3">03</span>
+<h4 class="font-serif font-bold text-lg text-ayur-dark tracking-wide">CONNECT</h4>
+<p class="text-xs text-ayur-charcoal/70 mt-2 font-light">Bonding with like-minded future Vaidyas and mentors.</p>
+</div>
+<!-- Step 4 -->
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 text-center shadow-sm hover:border-ayur-gold transition-all duration-300">
+<span class="w-8 h-8 rounded-full bg-ayur-dark text-ayur-goldlight text-xs font-bold inline-flex items-center justify-center mb-3">04</span>
+<h4 class="font-serif font-bold text-lg text-ayur-dark tracking-wide">OBSERVE</h4>
+<p class="text-xs text-ayur-charcoal/70 mt-2 font-light">Refining clinical Darshana, Sparshana, and Naadi perception.</p>
+</div>
+<!-- Step 5 -->
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 text-center shadow-sm hover:border-ayur-gold transition-all duration-300">
+<span class="w-8 h-8 rounded-full bg-ayur-dark text-ayur-goldlight text-xs font-bold inline-flex items-center justify-center mb-3">05</span>
+<h4 class="font-serif font-bold text-lg text-ayur-dark tracking-wide">DELVE</h4>
+<p class="text-xs text-ayur-charcoal/70 mt-2 font-light">Deep diving into Chikitsa, formulation logic, and Mindscaping.</p>
+</div>
+<!-- Step 6 -->
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 text-center shadow-sm hover:border-ayur-gold transition-all duration-300">
+<span class="w-8 h-8 rounded-full bg-ayur-dark text-ayur-goldlight text-xs font-bold inline-flex items-center justify-center mb-3">06</span>
+<h4 class="font-serif font-bold text-lg text-ayur-dark tracking-wide">EVOLVE</h4>
+<p class="text-xs text-ayur-charcoal/70 mt-2 font-light">Stepping forward as a grounded, confident, insightful Vaidya.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: What Makes DECODE Different Section -->
+<!-- BEGIN: 3-Day Journey Section -->
+<section class="py-24 bg-ayur-forest text-white relative" data-purpose="three-day-journey" id="journey">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<p class="text-xs uppercase tracking-[0.25em] text-ayur-goldlight font-semibold mb-2">The Timeline</p>
+<h2 class="font-serif text-3xl sm:text-5xl font-light tracking-tight">A Glimpse of Your 3 Days</h2>
+<div class="w-16 h-0.5 bg-ayur-gold mx-auto mt-4 mb-4"></div>
+<p class="text-sm text-ayur-softsage font-light">
+            A curated rhythm of immersion across three transformative phases in the Western Ghats.
+          </p>
+</div>
+<!-- 3 Phase Timeline Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<!-- Phase 1 -->
+<div class="glass-dark-card rounded-2xl p-7 border border-ayur-gold/25 relative">
+<span class="absolute -top-3.5 left-6 bg-ayur-gold text-ayur-forest text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+              Day 01
+            </span>
+<div class="text-xs uppercase tracking-widest text-ayur-goldlight mb-1 mt-2">Phase 1</div>
+<h3 class="font-serif text-2xl font-normal text-white mb-4">Foundation</h3>
+<p class="text-xs sm:text-sm text-ayur-softsage/85 leading-relaxed font-light mb-4">
+              Arrival in Igatpuri, grounding rituals, opening the mind, unlearning rote barriers, and reconnecting with original Samhita intent.
+            </p>
+<ul class="text-xs space-y-2 text-ayur-cream/80 border-t border-ayur-gold/20 pt-4 font-light">
+<li class="flex items-center gap-2"><span>✦</span> Nature Check-in &amp; Welcome Brew</li>
+<li class="flex items-center gap-2"><span>✦</span> Breaking the Textual Mold</li>
+<li class="flex items-center gap-2"><span>✦</span> Evening Campfire Circle</li>
+</ul>
+</div>
+<!-- Phase 2 -->
+<div class="glass-dark-card rounded-2xl p-7 border border-ayur-gold/40 relative shadow-gold-glow">
+<span class="absolute -top-3.5 left-6 bg-gradient-to-r from-ayur-goldlight to-ayur-gold text-ayur-forest text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+              Day 02
+            </span>
+<div class="text-xs uppercase tracking-widest text-ayur-goldlight mb-1 mt-2">Phase 2</div>
+<h3 class="font-serif text-2xl font-normal text-white mb-4">Building</h3>
+<p class="text-xs sm:text-sm text-ayur-softsage/85 leading-relaxed font-light mb-4">
+              Full sensory exploration, pathological tracking from Hetu to Chikitsa, pulse immersion, and active practical workshops.
+            </p>
+<ul class="text-xs space-y-2 text-ayur-cream/80 border-t border-ayur-gold/20 pt-4 font-light">
+<li class="flex items-center gap-2"><span>✦</span> Sunrise Dinacharya &amp; Breathwork</li>
+<li class="flex items-center gap-2"><span>✦</span> Clinical Reasoning Labs</li>
+<li class="flex items-center gap-2"><span>✦</span> Formulation &amp; Mindscaping</li>
+</ul>
+</div>
+<!-- Phase 3 -->
+<div class="glass-dark-card rounded-2xl p-7 border border-ayur-gold/25 relative">
+<span class="absolute -top-3.5 left-6 bg-ayur-gold text-ayur-forest text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+              Day 03
+            </span>
+<div class="text-xs uppercase tracking-widest text-ayur-goldlight mb-1 mt-2">Phase 3</div>
+<h3 class="font-serif text-2xl font-normal text-white mb-4">Implementation</h3>
+<p class="text-xs sm:text-sm text-ayur-softsage/85 leading-relaxed font-light mb-4">
+              Integrating modern practicalities—AI, authentic outreach, clinical confidence, and launching your personal Vaidya journey.
+            </p>
+<ul class="text-xs space-y-2 text-ayur-cream/80 border-t border-ayur-gold/20 pt-4 font-light">
+<li class="flex items-center gap-2"><span>✦</span> Real-World Practice Blueprints</li>
+<li class="flex items-center gap-2"><span>✦</span> Mann Ki Baat Open Forum</li>
+<li class="flex items-center gap-2"><span>✦</span> Valedictory Circle &amp; Certification</li>
+</ul>
+</div>
+</div>
+<!-- Curated Experiences Cloud -->
+<div class="bg-black/30 backdrop-blur-md rounded-2xl p-8 border border-ayur-gold/30">
+<h4 class="text-center font-serif text-xl text-ayur-goldlight mb-6 tracking-wide">
+            Signature Immersion Sessions You Will Experience
+          </h4>
+<div class="flex flex-wrap items-center justify-center gap-3">
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              🔍 Dosha Detective
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              🎶 Samhita to Swara
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              ⚠️ The Unwanted Guest – Ama
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              🌿 Spot It, Know It, Use It
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              ⚡ The Ayurveda Chain Reaction
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              🔥 The Missing Link – Agni
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              🩺 The Naadi Story
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              🧪 Science Behind Formulations
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              🤖 Use of AI &amp; Marketing in Ayurveda
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              🌌 Mindscaping of Ayurveda
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              💬 Mann Ki Baat
+            </span>
+<span class="px-4 py-2 rounded-full text-xs bg-ayur-leaf/50 border border-ayur-gold/30 text-white font-medium hover:border-ayur-gold transition-colors">
+              🎲 Ayurveda Through Fun Activity
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: 3-Day Journey Section -->
+<!-- BEGIN: Who Is It For Section -->
+<section class="py-24 bg-ayur-cream relative" data-purpose="who-is-it-for">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<p class="text-xs uppercase tracking-[0.25em] text-ayur-golddark font-semibold mb-2">Designed For Aspirants</p>
+<h2 class="font-serif text-3xl sm:text-4xl md:text-5xl text-ayur-dark font-normal">
+            For BAMS Students, PG Scholars &amp; Budding Vaidyas
+          </h2>
+<div class="w-16 h-0.5 bg-ayur-gold mx-auto mt-4 mb-4"></div>
+<p class="text-sm text-ayur-charcoal/75 font-light">
+            If you see yourself in this checklist, DECODE is created for you:
+          </p>
+</div>
+<!-- Checklist -->
+<div class="bg-white rounded-3xl p-8 sm:p-12 border border-ayur-gold/30 shadow-card-soft">
+<ul class="space-y-5">
+<li class="flex items-start gap-4">
+<span class="w-6 h-6 rounded-full bg-ayur-gold/20 text-ayur-golddark flex-shrink-0 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<p class="text-sm sm:text-base text-ayur-charcoal font-light leading-relaxed">
+                Wants to understand Ayurveda <span class="font-semibold text-ayur-dark">beyond examinations and vivas</span>.
+              </p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-6 h-6 rounded-full bg-ayur-gold/20 text-ayur-golddark flex-shrink-0 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<p class="text-sm sm:text-base text-ayur-charcoal font-light leading-relaxed">
+                Feels deep down that there is <span class="font-semibold text-ayur-dark">more to Ayurveda than the college syllabus</span> has shown so far.
+              </p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-6 h-6 rounded-full bg-ayur-gold/20 text-ayur-golddark flex-shrink-0 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<p class="text-sm sm:text-base text-ayur-charcoal font-light leading-relaxed">
+                Aspires to become an <span class="font-semibold text-ayur-dark">instinctual, respected, and effective future Vaidya</span>.
+              </p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-6 h-6 rounded-full bg-ayur-gold/20 text-ayur-golddark flex-shrink-0 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<p class="text-sm sm:text-base text-ayur-charcoal font-light leading-relaxed">
+                Loves asking <span class="font-semibold text-ayur-dark font-serif italic text-lg">“Why?”</span> and seeks logical clinical clarity rather than blind acceptance.
+              </p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-6 h-6 rounded-full bg-ayur-gold/20 text-ayur-golddark flex-shrink-0 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<p class="text-sm sm:text-base text-ayur-charcoal font-light leading-relaxed">
+                Wants practical, tactile understanding of classical concepts like Dosha, Agni, Ama, and Dhatu.
+              </p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-6 h-6 rounded-full bg-ayur-gold/20 text-ayur-golddark flex-shrink-0 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<p class="text-sm sm:text-base text-ayur-charcoal font-light leading-relaxed">
+                Longs to meet and collaborate with <span class="font-semibold text-ayur-dark">ambitious, like-minded Ayurveda students</span> from colleges across India.
+              </p>
+</li>
+<li class="flex items-start gap-4">
+<span class="w-6 h-6 rounded-full bg-ayur-gold/20 text-ayur-golddark flex-shrink-0 flex items-center justify-center font-bold text-xs mt-0.5">✓</span>
+<p class="text-sm sm:text-base text-ayur-charcoal font-light leading-relaxed">
+                Is ready to unlearn passive cramming, question freely, and <span class="font-semibold text-ayur-dark">live the wisdom first-hand</span>.
+              </p>
+</li>
+</ul>
+<div class="mt-10 pt-8 border-t border-ayur-gold/20 text-center">
+<button class="px-8 py-3.5 rounded-full text-xs font-semibold uppercase tracking-widest text-ayur-forest bg-ayur-gold hover:bg-ayur-goldlight transition-all shadow-sm" onclick="window.DECODE_MODAL.openModal()" type="button">
+              Reserve Your Place In The Cohort
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Who Is It For Section -->
+<!-- BEGIN: The Perspective Section -->
+<section class="py-20 bg-ayur-ivory border-y border-ayur-gold/20" data-purpose="the-perspective">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<span class="text-xs uppercase tracking-[0.25em] text-ayur-golddark font-semibold">The Shift</span>
+<h2 class="font-serif text-3xl sm:text-5xl text-ayur-dark font-normal mt-4 mb-6 leading-tight">
+          “Come as a Student. <br/>
+<span class="italic text-ayur-golddark">Leave with a Vaidya’s Perspective.”</span>
+</h2>
+<div class="w-20 h-px bg-ayur-gold mx-auto mb-8"></div>
+<p class="font-serif text-xl sm:text-2xl text-ayur-charcoal/80 italic font-light max-w-2xl mx-auto leading-relaxed">
+          DECODE isn't about teaching you everything Ayurveda has to offer. <br class="hidden sm:inline"/>
+          It's about making you curious enough to keep learning for a lifetime.
+        </p>
+</div>
+</section>
+<!-- END: The Perspective Section -->
+<!-- BEGIN: The DECODE Circle Section -->
+<section class="py-24 bg-ayur-forest text-white relative" data-purpose="decode-circle" id="circle">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Text Left -->
+<div class="lg:col-span-6 space-y-6">
+<span class="text-xs uppercase tracking-[0.25em] text-ayur-goldlight font-semibold">Lifelong Tribe</span>
+<h2 class="font-serif text-3xl sm:text-5xl font-light leading-tight">
+              One journey. <br/>
+<span class="text-ayur-goldlight font-normal">A room full of future Vaidyas.</span>
+</h2>
+<p class="text-sm sm:text-base text-ayur-softsage font-light leading-relaxed">
+              Medical school can often feel isolating when you desire to practice authentic classical Ayurveda. At DECODE, you join an elite, supportive guild of peers who share your hunger and reverence for the science.
+            </p>
+<div class="space-y-4 pt-2">
+<div class="flex items-start gap-3">
+<span class="text-ayur-gold text-base">✦</span>
+<p class="text-xs sm:text-sm text-ayur-cream/90 font-light">Meet students and young Vaidyas from top colleges across India.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-ayur-gold text-base">✦</span>
+<p class="text-xs sm:text-sm text-ayur-cream/90 font-light">Share raw clinical struggles, examination doubts, and future aspirations.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-ayur-gold text-base">✦</span>
+<p class="text-xs sm:text-sm text-ayur-cream/90 font-light">Challenge and discuss classical ideas in a safe, constructive environment.</p>
+</div>
+<div class="flex items-start gap-3">
+<span class="text-ayur-gold text-base">✦</span>
+<p class="text-xs sm:text-sm text-ayur-cream/90 font-light">Build lifelong friendships, future co-practice partners, and memories worth cherishing.</p>
+</div>
+</div>
+<div class="pt-4">
+<button class="px-8 py-3.5 rounded-full text-xs font-semibold uppercase tracking-widest text-ayur-forest bg-ayur-gold hover:bg-ayur-goldlight transition-all" onclick="window.DECODE_MODAL.openModal()" type="button">
+                Join the DECODE Circle
+              </button>
+</div>
+</div>
+<!-- Visual Right: Interactive Community Card -->
+<div class="lg:col-span-6">
+<div class="relative rounded-3xl p-8 bg-white/5 border border-ayur-gold/30 backdrop-blur-xl shadow-2xl">
+<div class="flex items-center gap-4 mb-6 pb-6 border-b border-white/10">
+<img alt="DECODE Emblem" class="w-16 h-16 rounded-full bg-ayur-ivory p-1 border border-ayur-gold/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV2BoFZNEe1bsptjFU1mKxU1Tvlm2HsN7m7gkhqwjIjDAgMBIeXVtR_w5o4-QffX_-VeDxipSGs7HRFLRWlOoUTHadGdZj-fR4cWPfG5w9qhD_IA-IUDp4mEvPN47VVdhSSlUASe15Sr3r1dagMhvQS81FNShMUUwog229TT8F418e5YM6BTHgFPD4sbhuTg0CcH4uTVsjIFumnU5TCPObUdPPe_7u_Ns6KtBFsHG81bgKV-8wZRPC0lTj3jNSlI5Zrg"/>
+<div>
+<h4 class="font-serif text-xl font-medium text-white">The DECODE Cohort 2026</h4>
+<p class="text-xs text-ayur-goldlight">October 23–25 • Igatpuri Western Ghats</p>
+</div>
+</div>
+<!-- Community Quote -->
+<blockquote class="font-serif italic text-base sm:text-lg text-ayur-softsage mb-6 leading-relaxed">
+                “When young minds passionate about Ayurveda gather without the pressure of an exam hall, the science comes alive with breathtaking clarity.”
+              </blockquote>
+<div class="grid grid-cols-3 gap-3 text-center border-t border-white/10 pt-6">
+<div>
+<span class="block font-serif text-2xl font-bold text-ayur-goldlight">3 Days</span>
+<span class="text-[10px] text-ayur-softsage uppercase tracking-wider">Immersion</span>
+</div>
+<div>
+<span class="block font-serif text-2xl font-bold text-ayur-goldlight">Limited</span>
+<span class="text-[10px] text-ayur-softsage uppercase tracking-wider">Intimate Seats</span>
+</div>
+<div>
+<span class="block font-serif text-2xl font-bold text-ayur-goldlight">1 Tribe</span>
+<span class="text-[10px] text-ayur-softsage uppercase tracking-wider">Lifelong Bond</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: The DECODE Circle Section -->
+<!-- BEGIN: What's Included Section -->
+<section class="py-24 bg-ayur-cream relative" data-purpose="whats-included" id="inclusions">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<p class="text-xs uppercase tracking-[0.25em] text-ayur-golddark font-semibold mb-2">All-Inclusive Retreat</p>
+<h2 class="font-serif text-3xl sm:text-4xl text-ayur-dark">What's Included in Your Knowcation</h2>
+<div class="w-16 h-0.5 bg-ayur-gold mx-auto mt-4 mb-4"></div>
+<p class="text-sm text-ayur-charcoal/70">Everything taken care of so you can immerse fully in learning and rejuvenation.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 shadow-card-soft flex items-start gap-4">
+<span class="text-ayur-gold text-xl font-bold">✓</span>
+<div>
+<h4 class="font-serif font-bold text-ayur-dark text-base">3 Days / 2 Nights Programme</h4>
+<p class="text-xs text-ayur-charcoal/75 mt-1 font-light">Complete experiential curriculum crafted specifically for budding clinicians.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 shadow-card-soft flex items-start gap-4">
+<span class="text-ayur-gold text-xl font-bold">✓</span>
+<div>
+<h4 class="font-serif font-bold text-ayur-dark text-base">Curated Learning Sessions</h4>
+<p class="text-xs text-ayur-charcoal/75 mt-1 font-light">Direct interaction with experienced practicing Vaidyas and mentors.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 shadow-card-soft flex items-start gap-4">
+<span class="text-ayur-gold text-xl font-bold">✓</span>
+<div>
+<h4 class="font-serif font-bold text-ayur-dark text-base">Interactive &amp; Hands-on Labs</h4>
+<p class="text-xs text-ayur-charcoal/75 mt-1 font-light">Tactile clinical assessments, Naadi practice, and live formulation discussions.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 shadow-card-soft flex items-start gap-4">
+<span class="text-ayur-gold text-xl font-bold">✓</span>
+<div>
+<h4 class="font-serif font-bold text-ayur-dark text-base">Boutique Stay in Nature</h4>
+<p class="text-xs text-ayur-charcoal/75 mt-1 font-light">Serene eco-resort accommodation enveloped by misty Western Ghats hills.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 shadow-card-soft flex items-start gap-4">
+<span class="text-ayur-gold text-xl font-bold">✓</span>
+<div>
+<h4 class="font-serif font-bold text-ayur-dark text-base">Wholesome Ayurvedic Meals</h4>
+<p class="text-xs text-ayur-charcoal/75 mt-1 font-light">Sattvic, delicious, season-aligned cuisine and warm herbal refreshments.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 shadow-card-soft flex items-start gap-4">
+<span class="text-ayur-gold text-xl font-bold">✓</span>
+<div>
+<h4 class="font-serif font-bold text-ayur-dark text-base">Community Circles &amp; Campfire</h4>
+<p class="text-xs text-ayur-charcoal/75 mt-1 font-light">Evening musical circles, Mann Ki Baat sessions, and starlit discussions.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 shadow-card-soft flex items-start gap-4">
+<span class="text-ayur-gold text-xl font-bold">✓</span>
+<div>
+<h4 class="font-serif font-bold text-ayur-dark text-base">Exclusive DECODE Learning Kit</h4>
+<p class="text-xs text-ayur-charcoal/75 mt-1 font-light">Specially printed reference journals, Vaidya field guide, and botanical tools.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 shadow-card-soft flex items-start gap-4">
+<span class="text-ayur-gold text-xl font-bold">✓</span>
+<div>
+<h4 class="font-serif font-bold text-ayur-dark text-base">Certificate of Participation</h4>
+<p class="text-xs text-ayur-charcoal/75 mt-1 font-light">Prestigious credential acknowledging your experiential clinical training.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-ayur-gold/30 shadow-card-soft flex items-start gap-4">
+<span class="text-ayur-gold text-xl font-bold">✓</span>
+<div>
+<h4 class="font-serif font-bold text-ayur-dark text-base">Lifelong Memories &amp; Clarity</h4>
+<p class="text-xs text-ayur-charcoal/75 mt-1 font-light">A transformed lens on your vocation that endures throughout your career.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: What's Included Section -->
+<!-- BEGIN: Event Info Highlight Banner Block -->
+<section class="py-12 bg-ayur-ivory border-y border-ayur-gold/30" data-purpose="event-meta-block">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-gradient-to-r from-ayur-dark via-ayur-forest to-ayur-dark text-white rounded-3xl p-8 sm:p-12 shadow-xl border border-ayur-gold/40 flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="space-y-3 text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-ayur-gold/20 text-ayur-goldlight text-[11px] font-semibold tracking-widest uppercase">
+              Exclusive Cohort • Igatpuri, Nashik
+            </div>
+<h3 class="font-serif text-2xl sm:text-3xl font-light text-white">
+              23–25 October 2026 • 3 Days | 2 Nights
+            </h3>
+<p class="text-xs sm:text-sm text-ayur-softsage font-light max-w-xl">
+              Limited seats to maintain high mentor-student interaction quality and personal clinical attention. Open to BAMS students, interns, and PG scholars.
+            </p>
+</div>
+<div class="flex-shrink-0">
+<button class="px-9 py-4 rounded-full text-xs sm:text-sm font-semibold uppercase tracking-widest text-ayur-forest bg-gradient-to-r from-ayur-goldlight via-ayur-gold to-ayur-golddark hover:shadow-gold-glow hover:scale-105 transition-all duration-300" onclick="window.DECODE_MODAL.openModal()" type="button">
+              Join DECODE Now
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Event Info Highlight Banner Block -->
+<!-- BEGIN: Final Emotional CTA Section -->
+<section class="relative py-28 bg-ayur-forest text-white overflow-hidden text-center" data-purpose="final-cta">
+<!-- Background retreat imagery with dark mist overlay -->
+<div class="absolute inset-0 z-0 opacity-20">
+<img alt="Serene morning in Igatpuri" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg8jAZHpkBPP3T0gpDKGew9g6uyC--twwVYQEEZXRbpfsEAYSh5Gffm9ZBvNInHNT8afWreZMEfNgW1Y5sx4nbDb8gOwXJhwWq7PpjOB1p2sA6Gv9-j7mgaoCH_Ra1UtJadMljSBrrSwwEhHkETnpvkVAsztzZOZOiWdocsQtFdCeIh_ER5fyrwRbAbVs161RXlv4z8HdpjY0UBWf_GIEZvJQBIEMKa4VBvVkNItyj3fS7eQLGHJNL"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-ayur-forest via-ayur-forest/90 to-ayur-forest/70 z-0"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<img alt="DECODE Emblem" class="w-20 h-20 rounded-full mx-auto mb-8 bg-ayur-ivory p-1 border-2 border-ayur-gold shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtMJU4yEi92VBUplthMJ3BJjyN0sj9jiEIz7GTC1mX5f12DtGXTRzNRQioI5h-XJ8NqAwbNuFszu0xyoRqevGYYQmDcQqGytfbLUpTFpTsgNQ5XpPNY_-P_BhxDkf4XKc5Mx-EVdJlnfeu6zn3tBEr5sVHYxeSfGmGmJ1CSXsfH-3qGdG72fXBefQLDNl7NO8vhxzw62BpAxQ36mazCQ5vAK_y6q1-F55VE5UicRe2jWpdk_idgSXxqfNiLDgBVCnJAA"/>
+<h2 class="font-serif text-3xl sm:text-5xl md:text-6xl font-light leading-tight mb-6">
+          You have spent years reading about Ayurveda. <br/>
+<span class="italic text-ayur-goldlight font-serif">Now… come experience it.</span>
+</h2>
+<p class="text-base sm:text-lg text-ayur-softsage font-light max-w-2xl mx-auto mb-10">
+          23–25 October 2026 • Igatpuri, Nashik <br/>
+          Step out of the lecture halls and into the heart of living Ayurveda.
+        </p>
+<button class="px-10 py-4 rounded-full text-sm font-semibold uppercase tracking-widest text-ayur-forest bg-gradient-to-r from-ayur-goldlight via-ayur-gold to-ayur-golddark hover:shadow-gold-glow hover:scale-105 active:scale-95 transition-all duration-300" onclick="window.DECODE_MODAL.openModal()" type="button">
+          Join DECODE
+        </button>
+</div>
+</section>
+<!-- END: Final Emotional CTA Section -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-black text-ayur-ivory border-t border-ayur-gold/20 py-16" data-purpose="main-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+<!-- Col 1: Brand Info -->
+<div class="md:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="DECODE Ayurveda Emblem" class="w-12 h-12 rounded-full bg-ayur-ivory p-0.5 border border-ayur-gold/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Sq6_sq405nMtL8uiqZMmWiiPIKbDYxOdcBPTaE0Gb9gEhOeFuahLyZvwsPpFIm8LXKsKLbQH40K-TSIGbx30cOvBeufYWTBOYbiyoxKXajPBxKE_cTIQxpTxpqRff3ZP0C6s25ZYt_llCv3BhPe1B5v5BNzJxYuTWwuOZxntNX_HVCC-wMZgcjKbXYRexqJTyfH-hh7jYpe7r7UaqLqsxbv4voXtlnMLB8acZ6vWzzzjKN5brkqHfeOSjasadRMCTg"/>
+<div>
+<span class="font-serif font-bold text-xl tracking-[0.2em] text-ayur-goldlight block">D.E.C.O.D.E.</span>
+<span class="text-xs text-ayur-softsage font-light italic">from learning Roots via Routes</span>
+</div>
+</div>
+<p class="text-xs text-ayur-cream/70 font-light leading-relaxed max-w-md pt-2">
+            An experiential Ayurveda learning Knowcation in Igatpuri, Nashik. Bridging ancient Samhita philosophy with tactile modern clinical mastery.
+          </p>
+</div>
+<!-- Col 2: Quick Links -->
+<div>
+<h4 class="text-xs font-semibold uppercase tracking-widest text-ayur-gold mb-4">Quick Links</h4>
+<ul class="space-y-2.5 text-xs text-ayur-cream/80 font-light">
+<li><a class="hover:text-ayur-gold transition-colors" href="#about">Why DECODE?</a></li>
+<li><a class="hover:text-ayur-gold transition-colors" href="#experience">The Knowcation</a></li>
+<li><a class="hover:text-ayur-gold transition-colors" href="#what-you-decode">What You'll Decode</a></li>
+<li><a class="hover:text-ayur-gold transition-colors" href="#journey">The 3-Day Journey</a></li>
+<li><a class="hover:text-ayur-gold transition-colors" href="#inclusions">What's Included</a></li>
+</ul>
+</div>
+<!-- Col 3: Contact Details -->
+<div>
+<h4 class="text-xs font-semibold uppercase tracking-widest text-ayur-gold mb-4">Get In Touch</h4>
+<ul class="space-y-3 text-xs text-ayur-cream/80 font-light">
+<li class="flex items-center gap-2.5">
+<svg class="w-4 h-4 text-ayur-gold" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<a class="hover:text-white transition-colors" href="tel:+919405199797">+91 94051 99797</a>
+</li>
+<li class="flex items-center gap-2.5">
+<svg class="w-4 h-4 text-ayur-gold" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<a class="hover:text-white transition-colors" href="mailto:decode.ashtang2026@gmail.com">decode.ashtang2026@gmail.com</a>
+</li>
+<li class="flex items-center gap-2.5">
+<svg class="w-4 h-4 text-ayur-gold" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+<a class="hover:text-white transition-colors" href="https://instagram.com/d.e.c.o.d.e.2026" rel="noopener noreferrer" target="_blank">@d.e.c.o.d.e.2026</a>
+</li>
+</ul>
+</div>
+</div>
+<!-- Copyright Bottom Bar -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-ayur-cream/50 gap-4">
+<p>Copyright © 2026 DECODE Ayurveda Knowcation. All rights reserved.</p>
+<p class="font-serif italic text-ayur-goldlight/70 text-sm">Discover • Connect • Deepen • Experience • Observe • Evolve</p>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: Interactive Registration Modal -->
+<div aria-labelledby="modalHeading" aria-modal="true" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 modal-backdrop opacity-0 pointer-events-none transition-opacity duration-300" data-purpose="registration-modal" id="signupModal" role="dialog">
+<div class="bg-white rounded-3xl p-8 sm:p-10 max-w-lg w-full shadow-2xl border border-ayur-gold/40 transform scale-95 transition-transform duration-300 relative overflow-hidden" id="modalContainer">
+<!-- Close Button -->
+<button aria-label="Close modal" class="absolute top-5 right-5 text-ayur-charcoal/50 hover:text-ayur-dark p-2 rounded-full hover:bg-ayur-ivory transition-colors" onclick="window.DECODE_MODAL.closeModal()" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<!-- Form View -->
+<div id="modalFormView">
+<div class="text-center mb-6">
+<div class="w-14 h-14 rounded-full bg-ayur-ivory border border-ayur-gold mx-auto mb-3 p-0.5 flex items-center justify-center">
+<img alt="DECODE Emblem" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwWOf17UDIPtA7Qc_ceDQ_uO2i-EYsDLBIik2RUl-9bDjEAwgzWjeruIuyfd9jkpVdAL-ZRJ0OF6Evnz0psQUhGFtQbbWKtoPpFhL7Jc7moJF8NiuL3t-lfHO4t3_2OrSnb8_ZSYImydmdSdqh5Bka1wlBBqs935ytcKRlNvJNp1-3tt8HcfFxRBszvdcI-AcpqfEe78wdB64x8Hhx2QsClfxJKuuW6707x8VnRhPuVzWdImP5iVyiXpjdUDVKvA1Efw"/>
+</div>
+<span class="text-[11px] uppercase tracking-widest text-ayur-golddark font-semibold">Join the Cohort</span>
+<h3 class="font-serif text-2xl sm:text-3xl text-ayur-dark mt-1 font-normal" id="modalHeading">
+            Join the DECODE Circle
+          </h3>
+<p class="text-xs sm:text-sm text-ayur-charcoal/70 mt-2 font-light">
+            Enter your email to register your interest for the DECODE Ayurveda Knowcation in Igatpuri.
+          </p>
+</div>
+<form class="space-y-4" id="decodeRegistrationForm" onsubmit="window.DECODE_MODAL.handleSubmit(event)">
+<div>
+<label class="block text-xs font-semibold uppercase tracking-wider text-ayur-dark mb-1.5" for="subscriberEmail">Email Address</label>
+<input class="w-full px-4 py-3 rounded-xl border border-ayur-gold/40 focus:border-ayur-gold focus:ring-1 focus:ring-ayur-gold text-sm text-ayur-charcoal bg-ayur-cream/30 placeholder-ayur-charcoal/40 transition-colors" id="subscriberEmail" placeholder="vaidya.yourname@example.com" required="" type="email"/>
+</div>
+<button class="w-full py-3.5 rounded-full text-xs font-semibold uppercase tracking-widest text-ayur-forest bg-gradient-to-r from-ayur-goldlight via-ayur-gold to-ayur-golddark hover:shadow-gold-glow transition-all duration-300" id="modalSubmitBtn" type="submit">
+            Join DECODE
+          </button>
+</form>
+<p class="text-[11px] text-center text-ayur-charcoal/50 mt-4 font-light">
+          Official inquiries forwarded to <span class="font-medium text-ayur-dark">decode.ashtang2026@gmail.com</span>. We respect your inbox privacy.
+        </p>
+</div>
+<!-- Success State View (Initially Hidden) -->
+<div class="hidden text-center py-6" id="modalSuccessView">
+<div class="w-16 h-16 rounded-full bg-ayur-softsage/60 text-ayur-leaf flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+          🌿
+        </div>
+<h3 class="font-serif text-2xl sm:text-3xl text-ayur-dark mb-2">
+          You're on the DECODE list!
+        </h3>
+<p class="text-xs sm:text-sm text-ayur-charcoal/75 font-light leading-relaxed max-w-xs mx-auto mb-6">
+          Thank you for taking the step towards living Ayurveda. We will contact you shortly with itinerary details and next steps.
+        </p>
+<button class="px-8 py-3 rounded-full text-xs font-semibold uppercase tracking-widest text-white bg-ayur-dark hover:bg-ayur-leaf transition-colors" onclick="window.DECODE_MODAL.closeModal()" type="button">
+          Close
+        </button>
+</div>
+</div>
+</div>
+<!-- END: Interactive Registration Modal -->
+<!-- JavaScript: Navigation & Modal Handlers -->
+<script data-purpose="mobile-menu-logic">
+    // Mobile navigation drawer toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      if (menu) {
+        menu.classList.toggle('hidden');
+      }
+    }
+  </script>
+<script data-purpose="modal-and-submission-handler">
+    /**
+     * DECODE Modal and Registration Handler
+     * Handles modal opening/closing, accessibility ESC key support, 
+     * localStorage caching, and mock backend webhook forwarding.
+     */
+    window.DECODE_MODAL = {
+      modal: document.getElementById('signupModal'),
+      container: document.getElementById('modalContainer'),
+      formView: document.getElementById('modalFormView'),
+      successView: document.getElementById('modalSuccessView'),
+      form: document.getElementById('decodeRegistrationForm'),
+
+      openModal: function() {
+        if (!this.modal) return;
+        this.formView.classList.remove('hidden');
+        this.successView.classList.add('hidden');
+        this.modal.classList.remove('opacity-0', 'pointer-events-none');
+        this.modal.classList.add('opacity-100', 'pointer-events-auto');
+        this.container.classList.remove('scale-95');
+        this.container.classList.add('scale-100');
+        
+        // Auto-focus email input
+        setTimeout(function() {
+          const emailInput = document.getElementById('subscriberEmail');
+          if (emailInput) emailInput.focus();
+        }, 150);
+      },
+
+      closeModal: function() {
+        if (!this.modal) return;
+        this.modal.classList.remove('opacity-100', 'pointer-events-auto');
+        this.modal.classList.add('opacity-0', 'pointer-events-none');
+        this.container.classList.remove('scale-100');
+        this.container.classList.add('scale-95');
+      },
+
+      handleSubmit: function(e) {
+        e.preventDefault();
+        const emailInput = document.getElementById('subscriberEmail');
+        if (!emailInput || !emailInput.value) return;
+
+        const email = emailInput.value.trim();
+        const submitBtn = document.getElementById('modalSubmitBtn');
+
+        // Provide button feedback
+        if (submitBtn) {
+          submitBtn.innerText = 'Registering...';
+          submitBtn.disabled = true;
+        }
+
+        /* 
+         * BACKEND INTEGRATION HOOK:
+         * Replace or forward this payload to your Google Sheets App Script,
+         * Zapier webhook, or email automation engine forwarding to decode.ashtang2026@gmail.com
+         */
+        const leadPayload = {
+          email: email,
+          event: "DECODE Ayurveda Knowcation 2026",
+          location: "Igatpuri, Nashik",
+          timestamp: new Date().toISOString()
+        };
+
+        // Cache lead locally in browser localStorage for offline resilience
+        try {
+          const existingLeads = JSON.parse(localStorage.getItem('decode_leads') || '[]');
+          existingLeads.push(leadPayload);
+          localStorage.setItem('decode_leads', JSON.stringify(existingLeads));
+        } catch (err) {
+          console.warn("Storage warning: ", err);
+        }
+
+        // Simulate network turnaround & reveal celebration state
+        setTimeout(() => {
+          if (submitBtn) {
+            submitBtn.innerText = 'Join DECODE';
+            submitBtn.disabled = false;
+          }
+          this.formView.classList.add('hidden');
+          this.successView.classList.remove('hidden');
+          this.form.reset();
+        }, 600);
+      }
+    };
+
+    // Close on click outside container
+    window.addEventListener('click', function(e) {
+      const modal = document.getElementById('signupModal');
+      const container = document.getElementById('modalContainer');
+      if (e.target === modal && !container.contains(e.target)) {
+        window.DECODE_MODAL.closeModal();
+      }
+    });
+
+    // Close on ESC key press
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        window.DECODE_MODAL.closeModal();
+      }
+    });
+  </script>
+</body></html>
